@@ -11,12 +11,12 @@ export const Contact = ({ darkMode }) => {
     setFormStatus('sending');
     
     try {
-      const response = await fetch('https://devfolio-o8xs.onrender.com/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-         mode: 'cors',
-        body: JSON.stringify(formData)
-      });
+     const response = await fetch('https://devfolio-o8xs.onrender.com/api/contact', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData)
+});
+
       
       if (response.ok) {
         setFormStatus('success');
