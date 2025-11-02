@@ -13,9 +13,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['https://devfolio-1-kqgz.onrender.com', 'http://localhost:5173'],
+  origin: ['https://devfolio-1-kqgz.onrender.com'],  // your frontend domain
   credentials: true,
 }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
