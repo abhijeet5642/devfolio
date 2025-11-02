@@ -1,6 +1,7 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
+import 
 
 export const Contact = ({ darkMode }) => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -14,6 +15,7 @@ export const Contact = ({ darkMode }) => {
       const response = await fetch('https://devfolio-o8xs.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+         mode: 'cors',
         body: JSON.stringify(formData)
       });
       
