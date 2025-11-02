@@ -1,7 +1,6 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
-import 
 
 export const Contact = ({ darkMode }) => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
