@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://devfolio-1-kqgz.onrender.com' || 'http://localhost:5173',
+  origin: 'https://devfolio-o8xs.onrender.com/api/contact
+' || 'http://localhost:5173',
   credentials: true
 }));
 app.use(express.json());
